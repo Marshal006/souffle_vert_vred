@@ -1,14 +1,28 @@
 html, body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 5px;
+    background-image: url(https://i.pinimg.com/originals/23/94/bc/2394bcf57859ce7cdfded737020011f3.png);
+}
+.start{
+    background-color: #97BC62FF;
+    border: solid #2C5F2D;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+
 }
 .article1, .article2, .article3, .article4, .article5{
     margin: 10px;
-    border: solid;
+    border: solid #2C5F2D;
     display: inline-block;
+    justify-content: space-between;
     width: 400px;
     flex-direction: column;
     align-content: center;
+    background-color: #97BC62FF;
+    padding: 20px;
     
 }
 .picture{
@@ -17,4 +31,21 @@ html, body{
 }
 h2{
     color: red;
+    justify-self: center;
+    margin: 10px;
+}
+.footer{
+    display: flex;
+    margin: 10px;
+    border: solid #2C5F2D;
+    flex-direction: column;
+    align-items: center;
+    background-color: #97BC62FF;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+}
+.article1:hover, .article2:hover, .article3:hover, .article4:hover, .article5:hover{
+    background-color: #53A567FF;
 }
