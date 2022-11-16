@@ -5,6 +5,12 @@ html, body{
     font-size: 20px;
 }
 
+p{
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+
 .start{
     background-color: #97BC62FF;
     border: solid #2C5F2D;
@@ -14,34 +20,40 @@ html, body{
     margin: 20px;
     padding: 20px;
     font-weight: bold;
+    width: auto;
 
 }
+@media screen and (max-width:1024px) {
+
+    #start_picture {
+        display: none;
+
+    }
+}
+
+
 .article_container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 
 }
-.article1, .article2, .article3, .article4, .article5{
+.article{
     margin: 10px;
     border: solid #2C5F2D;
     display: inline-block;
-    width: 400px;
+    width: 450px;
     flex-direction: column;
     align-content: center;
     background-color: #97BC62FF;
     padding: 20px;
     border-radius: 10px;
     
+    
 }
 .picture{
-    width: 350px;
+    width: 400px;
     height: auto;
-}
-h2{
-    color: red;
-    justify-self: center;
-    margin: 10px;
 }
 .footer{
     display: flex;
@@ -51,10 +63,23 @@ h2{
     align-items: center;
     background-color: #97BC62FF;
 }
-li{
-    display: inline-flex;
-    justify-content: space-between;
+h3{
+    padding: 20px;
+    margin: 20px;
+    
 }
-.article1:hover, .article2:hover, .article3:hover, .article4:hover, .article5:hover{
+li{
+    display: inline-block;
+    justify-content: space-between;
+    
+}
+li > a:link{
+    color: rgb(66, 66, 238);
+    text-decoration: none;
+}
+li > a:hover{
+    color: rgb(10, 70, 25)
+}
+.article:hover{
     background-color: #53A567FF;
 }
