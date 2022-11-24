@@ -5,6 +5,16 @@ html, body{
     font-size: 20px;
 }
 
+.navbar, .navbar-expand-lg, .dropdown-menu{
+    background-color: #97BC62FF;
+    border: solid #2C5F2D;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
 p{
     padding: 10px;
     margin: 10px;
